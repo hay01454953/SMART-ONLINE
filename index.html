@@ -42,13 +42,24 @@
       background-color: #222;
     }
     .hero {
-      background-color: #111;
+      background: url('https://cdn.pixabay.com/photo/2015/12/08/00/32/technology-1081815_1280.jpg') center/cover no-repeat;
       text-align: center;
       padding: 3rem 1rem;
+      position: relative;
     }
-    .hero h1 {
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
       color: var(--gold);
-      margin-bottom: 1rem;
     }
     .banner {
       background-color: var(--gold);
