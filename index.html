@@ -160,17 +160,48 @@
     </div>
   </header>
 
-  <nav class="category-nav">
-    <a href="tv.html">טלוויזיות ומקרני קול</a>
-    <a href="medihaim.html">תנורי אפייה וקולטים</a>
-    <a href="#">מקררים ומקפיאים</a>
-    <a href="#">מוצרי חשמל למטבח ולבית</a>
-    <a href="#">מדיח כלים</a>
-    <a href="#">מכונות ומייבשי כביסה</a>
-    <a href="#">מוצרי אקלים ומזגנים</a>
-    <a href="#">סלולר, טכנולוגיה ושמע</a>
-    <a href="#">יופי וטיפוח</a>
-  </nav>
+ <nav class="category-nav">
+  <a href="tv.html">טלוויזיות ומקרני קול</a>
+  <a href="medihaim.html">תנורי אפייה וקולטים</a>
+  <a href="#">מקררים ומקפיאים</a>
+  <a href="#">מוצרי חשמל למטבח ולבית</a>
+  <a href="#">מדיח כלים</a>
+  <a href="#">מכונות ומייבשי כביסה</a>
+  <a href="#">מוצרי אקלים ומזגנים</a>
+  <a href="#">סלולר, טכנולוגיה ושמע</a>
+  <a href="#">יופי וטיפוח</a>
+</nav>
+
+<style>
+  .category-nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0072c6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* הצללה */
+  }
+
+  .category-nav a:hover {
+    color: #0f62fe;
+  }
+
+  .category-nav {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    overflow-x: auto;
+  }
+</style>
+
 
 <div class="banner">
     <img src="https://i.postimg.cc/tCDx1pZQ/Page-Thumb-308.jpg" alt="Page-Thumb-308" style="width:100%; height:auto; object-fit:cover; border:none; display:block; margin-top: 0;">
