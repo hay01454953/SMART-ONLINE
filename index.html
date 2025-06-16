@@ -1,143 +1,111 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Online</title> 
+  <title>חנות מוצרי חשמל</title>
   <style>
-    :root {
-      --black: #000000;
-      --gold: #FFD700;
-    }
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: var(--black);
-      color: var(--gold);
+      direction: rtl;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
     header {
-      background-color: var(--gold);
+      background-color: #1a73e8;
+      color: white;
       padding: 1rem;
       text-align: center;
-      color: var(--black);
-      font-weight: bold;
-      font-size: 1.5rem;
     }
     nav {
-      background-color: var(--black);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      border-top: 1px solid var(--gold);
-      border-bottom: 1px solid var(--gold);
+      background-color: #e0e0e0;
+      padding: 1rem;
+      text-align: center;
     }
     nav a {
-      color: var(--gold);
+      margin: 0 15px;
       text-decoration: none;
-      padding: 1rem;
-      display: block;
-      transition: background-color 0.3s;
-    }
-    nav a:hover {
-      background-color: #222;
-    }
-    .hero {
-      background: url('https://cdn.pixabay.com/photo/2015/12/08/00/32/technology-1081815_1280.jpg') center/cover no-repeat;
-      text-align: center;
-      padding: 3rem 1rem;
-      position: relative;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-    .hero h1, .hero p {
-      position: relative;
-      z-index: 1;
-      color: var(--gold);
-    }
-    .banner {
-      background-color: var(--gold);
-      color: var(--black);
-      text-align: center;
-      font-size: 2rem;
+      color: #333;
       font-weight: bold;
-      padding: 1rem;
     }
     .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #111;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
     }
     .product {
-      background-color: #1a1a1a;
-      border: 2px solid var(--gold);
-      margin: 1rem;
+      background-color: white;
+      border: 1px solid #ccc;
       padding: 1rem;
-      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       text-align: center;
-      color: var(--gold);
     }
-    .footer {
-      background-color: var(--black);
-      color: var(--gold);
+    .product img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+    .product button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #333;
+      color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
-      border-top: 1px solid var(--gold);
     }
   </style>
 </head>
 <body>
-
-  <!-- תמונה עליונה -->
-  <img src="https://i.postimg.cc/WDHL2JLj/image.png" alt="Smart Online" style="display:block; margin:2rem auto; max-width:300px; border: 2px solid gold;">
-
-  <header>Smart Online</header> 
+  <header>
+    <h1>חנות מוצרי חשמל</h1>
+  </header>
   <nav>
-    <a href="#">מוצרי חשמל</a>
-    <a href="#">מזגנים</a>
     <a href="#">טלוויזיות</a>
-    <a href="#">מקררים</a>
-    <a href="#">שואבי אבק</a>
-    <a href="#">תנורים</a>
+    <a href="#">מזגנים</a>
     <a href="#">מכונות כביסה</a>
-    <a href="#">מדיחי כלים</a>
-    <a href="#">מאווררים</a>
-    <a href="#">קולנוע ביתי</a>
+    <a href="#">תנורים</a>
   </nav>
-  <div class="hero">
-    <h1>מבצעים חמים עכשיו באתר!</h1>
-    <p>משלוחים חינם בכל הארץ</p>
-  </div>
-  <div class="banner">מבצעים ל-72 שעות בלבד!</div>
-
-  <section class="products">
+  <main class="products">
     <div class="product">
-      <p style="font-size: 1.4rem; font-weight: bold; text-align: center; margin: 2rem 0;">מכונת כביסה</p>
+      <img src="https://via.placeholder.com/200x150?text=טלוויזיה" alt="טלוויזיה">
+      <h3>טלוויזיה חכמה 55"</h3>
+      <p>₪2,499</p>
+      <button>הוסף לסל</button>
     </div>
     <div class="product">
-      <p style="font-size: 1.4rem; font-weight: bold; text-align: center; margin: 2rem 0;">מקרר</p>
+      <img src="https://via.placeholder.com/200x150?text=מזגן" alt="מזגן">
+      <h3>מזגן 1.5 כ"ס</h3>
+      <p>₪1,799</p>
+      <button>הוסף לסל</button>
     </div>
     <div class="product">
-      <p style="font-size: 1.4rem; font-weight: bold; text-align: center; margin: 2rem 0;">תנור אפייה</p>
+      <img src="https://via.placeholder.com/200x150?text=מכונת+כביסה" alt="מכונת כביסה">
+      <h3>מכונת כביסה 8 ק"ג</h3>
+      <p>₪1,399</p>
+      <button>הוסף לסל</button>
     </div>
     <div class="product">
-      <p style="font-size: 1.4rem; font-weight: bold; text-align: center; margin: 2rem 0;">מדיח כלים</p>
+      <img src="https://via.placeholder.com/200x150?text=תנור" alt="תנור">
+      <h3>תנור אפייה בילד-אין</h3>
+      <p>₪999</p>
+      <button>הוסף לסל</button>
     </div>
-    <div class="product">
-      <p style="font-size: 1.4rem; font-weight: bold; text-align: center; margin: 2rem 0;">מאוורר</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    &copy; כל הזכויות שמורות לאתר Smart Online
+  </main>
+  <footer>
+    &copy; 2025 כל הזכויות שמורות לחנות מוצרי חשמל
   </footer>
 </body>
 </html>
