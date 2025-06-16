@@ -13,15 +13,27 @@
       color: #000;
     }
     header {
-      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       background: linear-gradient(to left, #0f62fe, #4891ff);
       color: white;
-      padding: 1rem;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .search {
+      flex: 1;
       text-align: center;
     }
-    header .logo {
-      font-size: 2.5rem;
-      font-weight: bold;
+    .search input {
+      width: 60%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
     }
     nav {
       background-color: #f2f2f2;
@@ -88,11 +100,18 @@
       padding: 2rem;
       margin-top: 3rem;
     }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">SMART ONLINE</div>
+    <div class="search">
+      <input type="text" placeholder="חפש מוצר...">
+    </div>
   </header>
 
   <nav>
@@ -118,12 +137,11 @@
       <p>₪2,499</p>
       <button>הוספה לעגלה</button>
     </div>
-    <!-- ניתן להוסיף עוד מוצרים כאן -->
   </main>
 
   <footer>
     <p>&copy; 2025 SMART ONLINE | כל הזכויות שמורות</p>
-    <a href="policy.html" style="color: #fff; text-decoration: underline;">תקנון ומדיניות פרטיות</a>
+    <a href="policy.html">תקנון ומדיניות פרטיות</a>
   </footer>
 </body>
 </html>
