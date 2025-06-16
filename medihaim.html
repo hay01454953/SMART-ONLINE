@@ -3,6 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART ONLINE | טלוויזיות</title>
+  <style>
+    .category-nav {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      overflow-x: auto;
+    }
+    .category-nav a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #0072c6;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 5px 10px;
+      transition: 0.3s;
+      border-right: 2px solid #ccc; /* קו מפריד בין כל קטגוריה */
+      text-align: center; /* ממרכז את הטקסט */
+    }
+    .category-nav a:hover {
+      color: #0f62fe;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      background-color: #ffffff;
+      margin: 0;
+    }
+    header {
+      z-index: 999;
+      background: linear-gradient(to left, #0f62fe, #4891ff);
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      position: relative;
+      z-index: 1000;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #0f62fe;
+    }
+    .banner {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+    .product h3 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    .product p {
+      font-weight: bold;
+      color: #0f62fe;
+    }
+    .product button {
+      background-color: #0f62fe;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header div {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .category-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+      .products {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      .product {
+        width: 90%;
+        margin: auto;
+      }
+      input[type="text"] {
+        width: 90% !important;
+        margin: 0.5rem 0;
+      }
+      .banner img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; padding: 0.5rem 1rem;">
+      <div style="margin-left: auto;">
+        <a href='index.html'>
+          <img src='https://i.postimg.cc/xTtqg53W/Chat-GPT-Image-Jun-16-2025-10-49-38-AM.png' border='0' alt='Chat-GPT-Image' style='height: 135px;'>
+        </a>
+      </div>
+      <div style="text-align: center; margin: 0 auto;">
+        <div style="font-size: 4.5rem; font-weight: bold; line-height: 1.6; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+          SMART ONLINE
+        </div>
+        <div style="font-size: 2.1rem; font-weight: bold;">המקום החכם לקנות מוצרי חשמל!</div>
+      </div>
+      <div style="margin-right: auto;">
+        <input type="text" placeholder="חיפוש מוצרים..." style="padding: 10px 20px; border-radius: 30px; border: 1px solid #ccc; font-size: 1rem; width: 250px;">
+      </div>
+    </div>
+  </header>
+
+  <nav class="category-nav">
+    <a href="tv.html">טלוויזיות ומקרני קול</a>
+    <a href="medihaim.html">תנורי אפייה וקולטים</a>
+    <a href="#">מקררים ומקפיאים</a>
+    <a href="#">מוצרי חשמל למטבח ולבית</a>
+    <a href="#">מדיח כלים</a>
+    <a href="#">מכונות ומייבשי כביסה</a>
+    <a href="#">מוצרי אקלים ומזגנים</a>
+    <a href="#">סלולר, טכנולוגיה ושמע</a>
+    <a href="#">יופי וטיפוח</a>
+  </nav>
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>טלוויזיות ומקרני קול - SMART ONLINE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to left, #0f62fe, #4891ff);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .product h3 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .product p {
+      font-weight: bold;
+      color: #0f62fe;
+    }
+
+    .product button {
+      background-color: #0f62fe;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 1rem 2rem;
+      color: #0f62fe;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>טלוויזיות ומקרני קול</h1>
+  </header>
+
+  <a class="back" href="index.html">← חזרה לעמוד הראשי</a>
+
+  <main class="products">
+    <!-- כאן תוכל להוסיף מוצרים -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x180?text=TV+Product" alt="מוצר טלוויזיה">
+      <h3>טלוויזיה לדוגמה</h3>
+      <p>₪1,299</p>
+      <button>הוסף לסל</button>
+    </div>
+    <!-- העתק את הבלוק הזה כדי להוסיף עוד מוצרים -->
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>טלוויזיות ומקרני קול - SMART ONLINE</title>
   <style>
     body {
