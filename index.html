@@ -16,16 +16,15 @@
       overflow-x: auto;
     }
     .category-nav a {
-      display: inline-block;
-      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       color: #0072c6;
       text-decoration: none;
       font-weight: bold;
       font-size: 1rem;
-      border-right: 2px solid #ccc; /* קו מפריד בין כל קטגוריה */
-    }
-    .category-nav a:last-child {
-      border-right: none; /* כדי שלא יהיה קו אחרון */
+      padding: 5px 10px;
+      transition: 0.3s;
     }
     .category-nav a:hover {
       color: #0f62fe;
@@ -146,12 +145,14 @@
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; padding: 0.5rem 1rem;">
       <div style="margin-left: auto;">
         <a href='index.html'>
-          <img src='https://i.postimg.cc/xTtqg53W/Chat-GPT-Image-Jun-16-2025-10-49-38-AM.png' border='0' alt='Chat-GPT-Image' style='height: 100px;'>
+          <img src='https://i.postimg.cc/xTtqg53W/Chat-GPT-Image-Jun-16-2025-10-49-38-AM.png' border='0' alt='Chat-GPT-Image' style='height: 135px;'>
         </a>
       </div>
       <div style="text-align: center; margin: 0 auto;">
-        <div style="font-size: 1.5rem; font-weight: bold; line-height: 1.6;">ברוכים הבאים ל-SMART ONLINE</div>
-        <div style="font-size: 1.1rem; font-weight: bold;">המקום החכם לקנות מוצרי חשמל!</div>
+      <div style="font-size: 4.5rem; font-weight: bold; line-height: 1.6; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+  SMART ONLINE
+</div>
+        <div style="font-size: 2.1rem; font-weight: bold;">המקום החכם לקנות מוצרי חשמל!</div>
       </div>
       <div style="margin-right: auto;">
         <input type="text" placeholder="חיפוש מוצרים..." style="padding: 10px 20px; border-radius: 30px; border: 1px solid #ccc; font-size: 1rem; width: 250px;">
