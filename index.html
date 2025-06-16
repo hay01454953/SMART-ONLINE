@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>חנות מוצרי חשמל</title>
+  <title>SMART ONLINE</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,12 +22,19 @@
       background-color: #e0e0e0;
       padding: 1rem;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
     nav a {
-      margin: 0 15px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      padding: 5px 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
     .products {
       display: grid;
@@ -66,17 +73,28 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>חנות מוצרי חשמל</h1>
+    <div class="logo">SMART ONLINE</div>
+    <div>חנות מוצרי חשמל</div>
   </header>
   <nav>
     <a href="#">טלוויזיות</a>
+    <a href="#">מקררים</a>
     <a href="#">מזגנים</a>
     <a href="#">מכונות כביסה</a>
     <a href="#">תנורים</a>
+    <a href="#">מדיחי כלים</a>
+    <a href="#">שואבי אבק</a>
+    <a href="#">מאווררים</a>
+    <a href="#">קומקומים</a>
+    <a href="#">מייבשי כביסה</a>
   </nav>
   <main class="products">
     <div class="product">
@@ -86,26 +104,32 @@
       <button>הוסף לסל</button>
     </div>
     <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=מקרר" alt="מקרר">
+      <h3>מקרר 4 דלתות</h3>
+      <p>₪3,999</p>
+      <button>הוסף לסל</button>
+    </div>
+    <div class="product">
       <img src="https://via.placeholder.com/200x150?text=מזגן" alt="מזגן">
-      <h3>מזגן 1.5 כ"ס</h3>
+      <h3>מזגן אינוורטר 1.5 כ"ס</h3>
       <p>₪1,799</p>
       <button>הוסף לסל</button>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/200x150?text=מכונת+כביסה" alt="מכונת כביסה">
-      <h3>מכונת כביסה 8 ק"ג</h3>
-      <p>₪1,399</p>
+      <img src="https://via.placeholder.com/200x150?text=שואב+אבק" alt="שואב אבק">
+      <h3>שואב אבק רובוטי</h3>
+      <p>₪899</p>
       <button>הוסף לסל</button>
     </div>
     <div class="product">
       <img src="https://via.placeholder.com/200x150?text=תנור" alt="תנור">
-      <h3>תנור אפייה בילד-אין</h3>
-      <p>₪999</p>
+      <h3>תנור בילד-אין דיגיטלי</h3>
+      <p>₪1,299</p>
       <button>הוסף לסל</button>
     </div>
   </main>
   <footer>
-    &copy; 2025 כל הזכויות שמורות לחנות מוצרי חשמל
+    &copy; 2025 כל הזכויות שמורות ל-SMART ONLINE
   </footer>
 </body>
 </html>
