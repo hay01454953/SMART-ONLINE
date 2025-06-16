@@ -16,17 +16,14 @@
       z-index: 999;
       background: linear-gradient(to left, #0f62fe, #4891ff);
       color: white;
-      padding: 0.5rem;
+      padding: 1rem;
       text-align: center;
-      position: relative;
     }
     header .logo {
       font-size: 2.5rem;
       font-weight: bold;
     }
     nav {
-      position: relative;
-      z-index: 1000;
       background-color: #f2f2f2;
       display: flex;
       justify-content: center;
@@ -91,66 +88,42 @@
       padding: 2rem;
       margin-top: 3rem;
     }
-    .legal-content {
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    .legal-content h1, .legal-content h2 {
-      color: #0f62fe;
-    }
   </style>
 </head>
 <body>
   <header>
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; padding: 0.5rem 1rem;">
-      <div style="margin-left: auto;">
-        <a href='index.html'>
-          <img src='https://i.postimg.cc/xTtqg53W/Chat-GPT-Image-Jun-16-2025-10-49-38-AM.png' alt='SMART ONLINE Logo' style='height: 100px;'>
-        </a>
-      </div>
-      <div style="text-align: center; margin: 0 auto;">
-        <div style="font-size: 1.5rem; font-weight: bold; line-height: 1.6;">ברוכים הבאים ל-SMART ONLINE</div>
-        <div style="font-size: 1.1rem; font-weight: bold;">המקום החכם לקנות מוצרי חשמל!</div>
-      </div>
-      <div style="margin-right: auto;">
-        <input type="text" placeholder="חיפוש מוצרים..." style="padding: 10px 20px; border-radius: 30px; border: 1px solid #ccc; font-size: 1rem; width: 250px;">
-      </div>
-    </div>
+    <div class="logo">SMART ONLINE</div>
   </header>
 
-  <main class="legal-content">
-    <h1>תקנון ומדיניות פרטיות - SMART ONLINE</h1>
-    <p>הטקסט המלא של התקנון עודכן ומותאם לשם SMART ONLINE במקומות הרלוונטיים. כיוון שהוא ארוך מאוד, הוא לא מוצג כאן במלואו אלא רק לצורך אינטגרציה מלאה באתר. לצורך הצגה ישירה – העתק את תוכנו המלא לכאן או הפנה לקובץ חיצוני.</p>
-    <p>אם ברצונך שאוסיף גם תפריט ניווט פנימי לפי סעיפים, אפשר להטמיע עוגנים (anchors) ולהציג תוכן מתמטי יותר.</p>
+  <nav>
+    <a href="#">ראשי</a>
+    <a href="#">טלוויזיות</a>
+    <a href="#">מקררים</a>
+    <a href="#">מכונות כביסה</a>
+    <a href="#">מזגנים</a>
+    <a href="#">מוצרים קטנים</a>
+    <a href="#">צור קשר</a>
+  </nav>
+
+  <main class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x180" alt="טלוויזיה">
+      <h3>טלוויזיה חכמה 55"</h3>
+      <p>₪1,999</p>
+      <button>הוספה לעגלה</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x180" alt="טלוויזיה">
+      <h3>טלוויזיה 4K 65"</h3>
+      <p>₪2,499</p>
+      <button>הוספה לעגלה</button>
+    </div>
+    <!-- ניתן להוסיף עוד מוצרים כאן -->
   </main>
 
   <footer>
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; text-align: right;">
-      <div>
-        <h3 style="color: white;">הישארו מעודכנים</h3>
-        <p>בפייסבוק</p>
-        <p>באינסטגרם</p>
-      </div>
-      <div>
-        <p>אודות SMART ONLINE</p>
-        <p>מדריכי קנייה</p>
-        <p>הצהרת נגישות</p>
-        <p>מפת אתר</p>
-        <p>דרושים</p>
-      </div>
-      <div>
-        <p><a href="#" style="color: white; text-decoration: underline;">תקנון ומדיניות פרטיות</a></p>
-        <p>מדיניות החזרת מוצרים/ביטול עסקה</p>
-        <p>צור קשר</p>
-        <p>פינוי פסולת אלקטרונית</p>
-        <p>ביטול הזמנה</p>
-        <p>תקנון מועדון SMART ONLINE</p>
-        <p>הנחות נפוצות</p>
-      </div>
-    </div>
-    <div style="margin-top: 2rem; color: #ccc;">
-      &copy; 2025 SMART ONLINE | כל הזכויות שמורות
-    </div>
+    <p>&copy; 2025 SMART ONLINE | כל הזכויות שמורות</p>
+    <a href="policy.html" style="color: #fff; text-decoration: underline;">תקנון ומדיניות פרטיות</a>
   </footer>
 </body>
 </html>
