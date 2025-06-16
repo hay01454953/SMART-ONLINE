@@ -114,6 +114,33 @@
       padding: 2rem;
       margin-top: 3rem;
     }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header div {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .category-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+      .products {
+        grid-template-columns: 1fr;
+      }
+      input[type="text"] {
+        width: 90% !important;
+      }
+      .product img {
+        height: auto;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -124,46 +151,20 @@
           <img src='https://i.postimg.cc/xTtqg53W/Chat-GPT-Image-Jun-16-2025-10-49-38-AM.png' border='0' alt='Chat-GPT-Image' style='height: 100px;'>
         </a>
       </div>
-      <div style="text-align: center; margin: 0 auto;">
-        <div style="font-size: 1.5rem; font-weight: bold; line-height: 1.6;">ברוכים הבאים ל-SMART ONLINE</div>
-        <div style="font-size: 1.1rem; font-weight: bold;">המקום החכם לקנות מוצרי חשמל!</div>
+      <div style="text-align: center; margin: 0 auto; display: flex; align-items: center; gap: 10px;">
+        <div>
+          <div style="font-size: 1.5rem; font-weight: bold; line-height: 1.6;">ברוכים הבאים ל-SMART ONLINE</div>
+          <div style="font-size: 1.1rem; font-weight: bold;">המקום החכם לקנות מוצרי חשמל!</div>
+        </div>
       </div>
       <div style="margin-right: auto;">
         <input type="text" placeholder="חיפוש מוצרים..." style="padding: 10px 20px; border-radius: 30px; border: 1px solid #ccc; font-size: 1rem; width: 250px;">
       </div>
     </div>
   </header>
-  <main class="products">
-    <div class="product">
-      <img src="https://i.postimg.cc/KvvnDJMM/92711811c.webp" alt="TCL 50">
-      <h3>טלוויזיה TCL 50" 4K</h3>
-      <p>₪1,090</p>
-      <button>הוסף לסל</button>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/TYRcHTZh/55-UT80006-FF-150320250915500-large.jpg" alt="LG 65">
-      <h3>טלוויזיה LG 65" 4K</h3>
-      <p>₪2,690</p>
-      <button>הוסף לסל</button>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/Bn3fzPJH/sku-669a10162b9a3-19072024101837-large.png" alt="Samsung 75">
-      <h3>טלוויזיה Samsung 75"</h3>
-      <p>₪4,390</p>
-      <button>הוסף לסל</button>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/DzK0BwMM/94058446c.jpg" alt="32">
-      <h3>טלוויזיה 32" HD</h3>
-      <p>₪649</p>
-      <button>הוסף לסל</button>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/pdv4swYZ/sku-66c85aed62076-230820241248290-large.png" alt="Xiaomi 43">
-      <h3>טלוויזיה Xiaomi 43" Android</h3>
-      <p>₪999</p>
-      <button>הוסף לסל</button>
-    </div>
-  </main>
+
+  <div class="banner">
+    <img src="https://i.postimg.cc/tCDx1pZQ/Page-Thumb-308.jpg" alt="Banner" style="width:100%; height:auto; object-fit:cover; border:none; display:block; margin-top: 0;">
+  </div>
 </body>
 </html>
